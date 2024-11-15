@@ -1,0 +1,237 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.header {
+    position: relative;
+    top: 0px;
+    right: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: rgb(51, 51, 51);
+    height: 80px;
+    padding: 1em 2em;
+
+
+}
+
+.header a {
+    text-decoration: none;
+    font-size: 20px;
+    font-family: cursive;
+    margin: 20px;
+    color: white
+}
+.header h1{
+   
+    font-family: cursive;
+    margin: 20px;
+    color:white;
+}
+
+
+
+
+
+
+
+.header a:hover {
+    color: rgb(165, 208, 245)
+}
+
+.middle {
+    height: 300px;
+    width: 100%;
+    background-color: rgba(180, 179, 176, 0.232);
+    color: black;
+    font-size: 15px;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.para-img {
+    height: 200px;
+    width: 40%;
+
+}
+
+.para-img img {
+    height: 100%;
+    width: 100%;
+
+}
+
+.para {
+    display: flex;
+    flex-direction: row;
+    width: 40%;
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+.para span {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+button {
+    font-size: 20px;
+    margin-top: 25px;
+    background-color: rgb(245, 138, 31);
+    padding: 5px;
+    text-decoration: none;
+    border: none;
+    color: antiquewhite;
+    margin-bottom: 30px;
+
+}
+
+button:hover {
+    color: rgb(55, 55, 55);
+}
+
+@media screen and (max-width:800px) {
+    .middle {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .para {
+        width: 90%;
+    }
+
+    .para-img {
+        width: 80%;
+    }
+
+    button {
+        margin-bottom: 20px;
+    }
+}
+
+.second {
+    height: auto;
+    width: 100%;
+    /* margin-top: 10px; */
+    padding: 30px; 
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    margin-bottom: 20px;
+
+    
+    
+}
+
+.head{
+    margin-left: 30px;
+    margin-top: 30px;
+}
+.service-cards{
+    width: 15%;
+    height: auto;
+    margin-left: 25px;
+    
+
+}
+
+.services{
+    width:100% ;
+    height:150px ;
+    background-color: rgb(38, 38, 38);
+    margin-bottom: 10px;
+}
+@media screen and (max-width:800px) {
+    .second {
+        display: flex;
+        flex-direction:column;
+        justify-content:space-evenly;
+    }
+    .service-cards{
+        width: 70%;
+        height: auto;
+        margin-left: 25px;
+    }    
+
+}
+
+.footer{
+    width: 100%;
+    /* height: 300px; */
+    background-color: rgb(50, 50, 50);
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+    margin-top: 30px;
+}
+.first{
+    width: 25%;
+    color: white;
+    margin-top: 30px;
+
+}
+.first ul li{
+    list-style: none;
+    margin-top: 10px;
+}
+
+.sec{
+    width: 25%;
+    margin-top: 30px;
+
+
+}
+
+.sec p{
+    margin-top: 30px;
+    text-align: justify;
+}
+
+.th{
+width: 25%;
+margin-top: 30px;
+color: aliceblue;
+}
+
+.th ul li {
+    list-style: none;
+    margin: 10px;
+    margin: 10px;
+    color: white;
+    margin-left: 20px;
+    font-size: 20px;
+}
+.th ul li i{
+    margin: 5px;
+}
+
+@media screen and (max-width:800px) {
+    .footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-evenly;
+    
+    }
+    .first{
+        width: 75%;
+        color: white;
+        margin-top: 30px;
+    }
+    .sec{
+        width: 75%;
+        margin-top: 30px;}
+        .th{
+            width: 75%;
+            margin-top: 30px;}
+    
+    
+}
