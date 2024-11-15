@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(to right ,rgb(172, 114, 248), rgb(224, 11, 207));
+        }
+
+        .login_box{
+            background-color:aliceblue;
+            width: 400px;
+            padding: 40px;
+            border-radius: 10px;
+            text-align: center;
+
+        }
+
+        .login_box h2{
+            margin-bottom: 30px;
+            color:rgb(40, 185, 170);
+        }
+        .textbox{
+            margin-bottom: 20px;
+        
+        }
+
+        .textbox input{
+            width: 100%;
+            padding: 10px;
+            background-color:rgb(182, 226, 226);
+            border: none;
+            color: rgb(118, 103, 103);
+            border-bottom: 2px solid rgb(27, 208, 214);
+            outline: none;
+            font-size: 16px;
+
+
+        }
+
+        .btn{
+            width: 100%;
+            padding: 10px;
+            text-align: center;
+            border:none;
+            background-color:rgb(182, 226, 226);
+            color: rgb(118, 103, 103);
+            font-size: 18px;
+
+
+        }
+        .btn:hover{
+            color:black
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="login_box">
+        <h2>Login To Your Account</h2>
+        <form>
+            <div class="textbox">
+                <input type="text" placeholder="Username" name="Username" required>
+            </div>
+            <div class="textbox">
+                <input type="password" placeholder="password" name="password" required>
+            </div>
+            <button type="submit" class="btn"> Login </button>
+        </form>
+
+    </div>
+
+</body>
+</html>
