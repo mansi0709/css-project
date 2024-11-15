@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(to right, rgb(110, 110, 170), rgb(163, 59, 197) );
+        }
+
+        .Registration{
+            width: 800px;
+            background-color: aliceblue;
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+
+        }
+
+        .Registration h1{
+            margin-bottom: 20px;
+            color:#333 ;
+        }
+        .form-g {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 20px;
+            
+        }
+        
+        .form-g input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            outline: none;
+            font-size: 16px;
+        }
+        
+        .gender{
+            margin-bottom: 20px;
+        }
+        
+    
+        
+        .btn {
+            width: 100%;
+            padding: 10px;
+            background: linear-gradient(to right, #4a90e2, #9013fe);
+            border: none;
+            color: white;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        .btn:hover {
+            opacity: 0.9;
+        }
+
+        @media screen and (max-width:800px) {
+            .form-g {
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+                margin-bottom:20px;
+                
+            }
+        }
+
+
+    </style>
+
+</head>
+<body>
+    <div class="Registration" >
+        <h1>Registration</h1>
+        <form>
+            <div class="form-g">
+                <label>Full Name</label>
+                <input type="text" placeholder="Enter Your Name">
+    
+                <label>Username</label>
+                <input type="text" placeholder="Enter Your Username" required>
+    
+            </div>
+           
+            <div class="form-g">
+                <label>Email</label>
+                <input type="text" placeholder="Enter Your Email">
+    
+                <label>phone Number</label>
+                <input type="tel" placeholder="Enter Your Number" minlength="10" required>
+               
+            </div>
+
+             <div class="form-g">
+                <label>password</label>
+                <input type="password" placeholder="Enter Your password" required>
+    
+                <label>confirm password</label>
+                <input type="text" placeholder="Enter Your confirm password">
+            </div>
+            
+            <div class="gender">
+                <label> Gender</label><br>
+                <input type="radio" name="ab"> <label>Male</label>
+                <input type="radio" name="ab"> <label>Female</label>
+                <input type="radio"name="ab"> <label>Other</label>
+            </div>
+            
+            <button type="submit" class="btn">Register</button>
+        </form>
+    </div>
+</body>
+</html>
