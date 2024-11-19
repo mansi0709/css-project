@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color:rgb(180, 179, 179) ;
+    }
+
+    .parent{
+        height: 500px;
+        width: 500px;
+        position: relative;
+        background-color: cadetblue;
+        transition: 2s;
+    }
+    .parent img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .child{
+        height: 100px;
+        position: absolute;
+        bottom: 0px;
+        overflow: hidden;
+        padding: 10px;
+        background-color: rgba(255, 132, 132, 0.651);
+        transition: 5s;
+        opacity: 1.0;
+    }
+    .child:hover{
+        height: 500px;
+        width: 500px;
+        opacity:0.7;
+    }
+
+</style>
+<body>
+    <div class="parent">
+        <img src="./photo.jpg" alt="">
+        <div class="child">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis enim qui dolorem aliquam placeat esse
+            inventore atque ipsum, maiores quam animi saepe molestias eveniet repellendus velit nam? Debitis ducimus
+            officiis cupiditate dolore, accusamus dicta corporis possimus sit rem! Ratione dignissimos exercitationem
+            corrupti vel eligendi laborum ullam voluptate molestiae sed magni nam accusantium, magnam quisquam,
+            inventore officiis eveniet veniam dolore harum dolor ad deleniti? Quaerat laudantium ut odit eos quas ullam
+            fugit repellendus cupiditate. Amet, voluptatem accusantium mollitia libero magni corrupti at ducimus a odit
+            debitis voluptates, molestias magnam ipsum earum voluptatibus perspiciatis eos incidunt laboriosam iste?
+            Maxime hic asperiores aut alias vero earum omnis! Officiis fugit aspernatur ut vitae. Expedita asperiores
+            quos harum iusto facilis voluptas corrupti quod unde laudantium delectus quo accusamus cumque magnam
+            commodi, eaque nulla obcaecati soluta sint vel. Esse dolor ea et doloremque illo iure natus ipsum a incidunt
+            voluptatum, nam voluptas nisi eos? Labore eligendi ab distinctio, veritatis repudiandae ipsa reiciendis
+            eveniet velit temporibus ea doloribus beatae sunt corporis possimus quidem commodi accusantium assumenda!
+            Laboriosam mollitia culpa tenetur recusandae corporis, autem exercitationem atque dolor dolorem voluptatum
+            et voluptates adipisci aliquid veritatis,
+            officia iure distinctio ab delectus, accusantium beatae expedita asperiores saepe. Accusantium ducimus
+            rerum dolore.
+        </div>
+    </div>
+</body>
+
+</html>

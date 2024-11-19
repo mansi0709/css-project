@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(to right, rgb(243, 83, 110), rgb(213, 99, 213), rgb(133, 206, 226));
+        }
+
+        .profile-card {
+            display: flex;
+            padding: 20px;
+            border-radius: 15px;
+            width: 900px;
+            height: 500px;
+            color: white;
+        }
+
+        .profile-left {
+            display: flex;
+            width: 350px;
+            height: auto;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            background-color: black;
+            border-right: 1px solid rgba(255, 255, 255, 0.2);
+            margin-right: 20px;
+            border-radius: 10px;
+
+
+        }
+
+        .profile-right {
+            width: 550px;
+            height: auto;
+            background-color: black;
+            margin-left: 20px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+
+        .profile-img {
+            height: 250px;
+            width: 250px;
+        }
+
+        .profile-img img {
+            height: 100%;
+            width: 100%;
+        }
+
+        .profile-name {
+            font-size: 25px;
+            margin-bottom: 10px;
+        }
+
+        .profile-D {
+            margin-bottom: 30px;
+
+        }
+
+        .details2 {
+            font-size: 25px;
+            margin-bottom: 50px;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div class="profile-card">
+        <div class="profile-left">
+            <div class="profile-img"><img src="./photo.jpg" alt=""></div>
+
+            <div class="profile-name">Mansi Agivale</div>
+            <div class="profile-professional">Web Developer</div>
+        </div>
+
+        <div class="profile-right">
+            <div class="profile-D">
+                <h1>Profile Details</h1>
+            </div>
+            <div class="details2">
+                <p><strong>Name:</strong>Mansi Agivale</p>
+                <p><strong>Age:</strong>22</p>
+                <p><strong>Mobile:</strong>+91 XXXXXXXXXX</p>
+                <p><strong>Email:</strong>mansi@gmail.com</p>
+                <p><strong>Address:</strong> 123 main st ,Dombivali</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

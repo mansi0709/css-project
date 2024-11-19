@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .box{
+            height: 300px;
+            width: 600px;
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+            transition:5s;
+            overflow: hidden;
+        }
+        .box img{
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+            transition:3s;
+        }
+        
+        .box1{
+            height: 300px;
+            width: 220px;
+            background-color: rgb(254, 112, 136);
+            transform-origin: center left;
+            position: absolute;
+            transition:3s;
+            
+            
+            
+        }
+        .box2{
+            height: 300px;
+            width: 220px;
+            background-color:rgb(254, 112, 136);
+            transform-origin: center right;
+            position: absolute;
+            right: 0px;
+            transition:3s;
+            
+        }
+        
+        .box:hover .box1{
+            transform: perspective(500px) rotatey(45deg) ;
+            border: 2px solid rgb(41, 185, 252);
+        }
+        
+        .box:hover .box2{
+            border: 2px solid rgb(41, 185, 252);
+            transform: perspective(500px) rotatey(-45deg) ;
+        }
+
+        .box:hover img{
+            transform: scale(1.5);
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <img src="./photo.jpg" alt="">
+        <div class="box1"></div>
+        <div class="box2"></div>
+    </div>
+</body>
+</html>
